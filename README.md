@@ -12,4 +12,9 @@ To use the resource simply click on website link in description.
 
 The project is being developed under MIT license.
 
-🧙Hocus-pocus!
+## Web-resources
+
+Links:
+ - [AWS](http://ev1ch-home-staging.s3-website.eu-central-1.amazonaws.com/)
+ - [GH Pages](https://ev1ch.github.io/homepage/)
+ - [Vercel](https://homepage-xi-weld.vercel.app/)
