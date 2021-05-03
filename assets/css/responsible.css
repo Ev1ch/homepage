@@ -1,0 +1,12 @@
+@media only screen and (max-width: 768px) {
+    .tags {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 578px) {
+    .main {
+        margin: 0;
+        width: 100%;
+    }
+}
