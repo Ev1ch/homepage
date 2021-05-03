@@ -38,6 +38,14 @@ body {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
+.subheader {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin: 0 0 1em 0;
+    font-weight: bold;
+}
+
 .main::after {
     position: absolute;
     content: '';

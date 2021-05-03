@@ -14,15 +14,15 @@
         <meta name="google" content="nositelinkssearchbox" />
         <meta name="subject" content="Trump's resume" />
         <meta name="application-name" content="Trump's resume" />
-        <noscript>
-            <p>To make website work properly enable JavaScript.</p>
-        </noscript>
         <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
             integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f"
             crossorigin="anonymous"></script>
     </head>
 
     <body class="day">
+        <noscript>
+            <p>To make website work properly enable JavaScript.</p>
+        </noscript>
         <div class="scroll-bar">
             <div class="theme-switcher" onclick="switchTheme()">
                 <span><i class="fas fa-moon"></i></span>
@@ -108,16 +108,16 @@
                 <div class="row">
                     <div class="ten wide column">
                         <section class="experience">
-                            <h3>Experience 🕶</h3>
-                            <h6>Recent</h6>
+                            <h3 class="header">Experience 🕶</h3>
+                            <span class="subheader">Recent</span>
                             <ul class="timeline">
                                 <li class="details">
                                     <input type="checkbox" id="presidency">
                                     <p><em>2017</em></p>
                                     <label for="presidency" class="summary">
-                                        <p>Became 45th
+                                        <span>Became 45th
                                             <strong>president of the United States</strong>
-                                        </p>
+                                        </span>
                                     </label>
                                     <div class="labels">
                                         <span class="label">politics</span>
@@ -150,8 +150,9 @@
                                     <input type="checkbox" id="university-settling">
                                     <p><em>2005</em></p>
                                     <label for="university-settling" class="summary">
-                                        <p>Started a university</strong>
-                                        </p>
+                                        <span>
+                                            Started a university
+                                        </span>
                                     </label>
                                     <div class="labels">
                                         <span class="label">educations</span>
@@ -225,7 +226,7 @@
                             <div class="details">
                                 <input type="checkbox" id="back-then">
                                 <label for="back-then" class="summary">
-                                    <h6>Back then</h6>
+                                    <span class="subheader">Back then</span>
                                 </label>
                                 <div>
                                     <ul class="timeline">
@@ -233,7 +234,7 @@
                                             <input type="checkbox" id="development-hudson">
                                             <p><em>1997</em></p>
                                             <label for="development-hudson" class="summary">
-                                                <p>Development along the Hudson River</p>
+                                                <span>Development along the Hudson River</span>
                                             </label>
                                             <div class="labels">
                                                 <span class="label">river</span>
@@ -282,7 +283,7 @@
                                                 into
                                                 a
                                                 44-story
-                                                luxury nown as <strong><a ref="external"
+                                                luxury nown as <strong><a rel="external"
                                                         href="https://www.trumphotels.com/">Trump
                                                         International Hotel</a></strong> Tower
                                             </p>
@@ -321,9 +322,10 @@
                                             <input type="checkbox" id="plaza-hotel">
                                             <p><em>1988</em></p>
                                             <label for="plaza-hotel" class="summary">
-                                                <p> Acquired the <strong><a
+                                                <span> Acquired the <strong><a
                                                             href="https://en.wikipedia.org/wiki/Plaza_Hotel"
-                                                            rel="external" target="_blank">Plaza Hotel</a></strong></p>
+                                                            rel="external" target="_blank">Plaza
+                                                            Hotel</a></strong></span>
                                             </label>
                                             <div class="labels">
                                                 <span class="label">hotel</span>
@@ -364,7 +366,7 @@
                                             <input type="checkbox" id="club">
                                             <p><em>1985</em></p>
                                             <label for="club" class="summary">
-                                                <p>Made the private club</p>
+                                                <span>Made the private club</span>
                                             </label>
                                             <div class="labels">
                                                 <span class="label">private</span>
@@ -402,7 +404,7 @@
                                             <input type="checkbox" id="football">
                                             <p><em>1985</em></p>
                                             <label for="football" class="summary">
-                                                <p>Buy the football team</p>
+                                                <span>Buy the football team</span>
                                             </label>
                                             <div class="labels">
                                                 <span class="label">football</span>
@@ -432,7 +434,7 @@
                                             <input type="checkbox" id="skyscraper">
                                             <p><em>1980</em></p>
                                             <label for="skyscraper" class="summary">
-                                                <p>Started developing the Trump Tower skyscraper in Manhattan</p>
+                                                <span>Started developing the Trump Tower skyscraper in Manhattan</span>
                                             </label>
                                             <div class="labels">
                                                 <span class="label">skyscraper</span>
@@ -508,7 +510,7 @@
                             <div class="details">
                                 <input type="checkbox" id="personal-life">
                                 <label for="personal-life" class="summary">
-                                    <h6>Personal life</h6>
+                                    <span class="subheader">Personal life</span>
                                 </label>
                                 <div>
                                     <ul class="timeline">
@@ -586,7 +588,7 @@
                             </div>
                         </section>
                         <section>
-                            <h3>Education 👨‍🎓</h3>
+                            <span class="subheader">Education 👨‍🎓</span>
                             <ul class="timeline">
                                 <li>
                                     <div><em>1966 &ndash; 1968</em></div>
@@ -626,7 +628,7 @@
 
                     <div class="six wide column">
                         <section class="languages">
-                            <h3>Languages🌍</h3>
+                            <h3 class="header">Languages🌍</h3>
                             <p class="tags small">
                                 <span class="language tag" lang="ru">&#x1f1f7;&#x1f1fa;
                                     РУССКИЙ
@@ -637,7 +639,7 @@
                             </p>
                         </section>
                         <section class="skills">
-                            <h3>Skills</h3>
+                            <h3 class="header">Skills</h3>
                             <p class="tags small">
                                 <span class="tag">NEGOTIATING</span>
                                 <span class="tag">COUNTING</span>
@@ -663,7 +665,7 @@
                             </p>
                         </section>
                         <section class="character">
-                            <h3>Character 🤐</h3>
+                            <h3 class="header">Character 🤐</h3>
                             <p class="tags small">
                                 <span class="tag">ADJUSTED</span>
                                 <span class="tag">CALM</span>
@@ -685,7 +687,7 @@
                             </p>
                         </section>
                         <section class="likes">
-                            <h3>Likes&#x1f603;</h3>
+                            <h3 class="header">Likes&#x1f603;</h3>
                             <p class="tags small">
                                 <span class="tag">
                                     <a rel="external" target="_blank"
@@ -721,7 +723,7 @@
                             </p>
                         </section>
                         <section class="dislikes">
-                            <h3>Dislikes&#x1f61e;</h3>
+                            <h3 class="header">Dislikes&#x1f61e;</h3>
                             <p class="tags small">
                                 <span class="tag">DOGS</span>
                                 <span class="tag">MEDIA</span>
@@ -743,7 +745,7 @@
                             </p>
                         </section>
                         <section class="wants">
-                            <h3>Wants&#x1f97a;</h3>
+                            <h3 class="header">Wants&#x1f97a;</h3>
                             <p class="tags small">
                                 <span class="tag">BE HEALTHY</span>
                                 <span class="tag">GROW A TREE</span>
@@ -755,11 +757,11 @@
                             </p>
                         </section>
                         <section>
-                            <h3>Media & books 👨‍⚖️</h3>
+                            <h3 class="header">Media & books 👨‍⚖️</h3>
                             <div class="details">
                                 <input type="checkbox" id="written-books">
                                 <label for="written-books" class="summary">
-                                    <h6>Books</h6>
+                                    <span class="subheader">Books</span>
                                 </label>
                                 <div>
                                     <ul class="timeline">
@@ -920,7 +922,7 @@
                             <div class="details">
                                 <input type="checkbox" id="media">
                                 <label for="media" class="summary">
-                                    <h6>Media</h6>
+                                    <span class="subheader">Media</span>
                                 </label>
                                 <div>
                                     <ul class="timeline">
