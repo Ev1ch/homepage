@@ -1,0 +1,90 @@
+body {
+    background: linear-gradient(45deg, #dbd5a4, #649173);
+}
+
+.main {
+    overflow: hidden;
+    padding: 50px;
+    width: 80%;
+    margin: 100px auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.main::after {
+    position: absolute;
+    content: '';
+    width: 400px;
+    background: red;
+    display: block;
+    height: 50px;
+    z-index: 1;
+    right: -120px;
+    top: 100px;
+    transform: rotate(45deg);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.tags .tag {
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 0.28571429rem;
+    display: inline-block;
+    padding: 5px;
+    background: #1594e9;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.tags .tag:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.tags .tag a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.languages .tag {
+    background: mediumpurple;
+}
+
+.character .tag {
+    background: #277262;
+}
+
+.likes .tag {
+    background: #57992c;
+}
+
+.dislikes .tag {
+    background: #c57373;
+}
+
+.wants .tag {
+    background: orange;
+    color: #000;
+}
+
+/* Overwriting & improving some base styles */
+.labels::after {
+    content: ' ';
+    clear: both;
+    display: block;
+}
+
+.details {
+    margin-bottom: 0.5rem;
+}
+
+.details .labels {
+    display: block;
+}
+
+.contacts li a.twitter:hover {
+    color: #1da1f2;
+}
+
+.contacts li a.instagram:hover {
+    color: #ff69b4;
+}
