@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+    - 11.13.0
+script:
+    - npm install --global workbox-cli
+    - workbox generateSW workbox-config.js
+deploy:
+    - provider: s3
+      skip_cleanup: true
+      access_key_id: AKIAQ6VVYBOONJOQ2JOT
+      secret_access_key: $SECRET-ACCESS-KEY
+      bucket: ev1ch-homepage-staging
+      region: eu-central-1
+      acl: public_read
+      on:
+          branch: develop
+    - provider: s3
+      skip_cleanup: true
+      access_key_id: AKIAQ6VVYBOONJOQ2JOT
+      secret_access_key: $SECRET-ACCESS-KEY
+      bucket: ev1ch-homepage-production
+      region: eu-central-1
+      acl: public_read
+      on:
+          branch: main
