@@ -1,12 +1,40 @@
+/* Overwriting & improving some base styles */
+.labels::after {
+    content: ' ';
+    clear: both;
+    display: block;
+}
+
+.details {
+    margin-bottom: 0.5rem;
+}
+
+.details .labels {
+    display: block;
+}
+
+.contacts li a.twitter:hover {
+    color: #1da1f2;
+}
+
+.contacts li a.instagram:hover {
+    color: #ff69b4;
+}
+
+/* Custom styles */
 body {
     background: linear-gradient(45deg, #dbd5a4, #649173);
+}
+
+.main:nth-last-child(3) {
+    margin-bottom: inherit;
 }
 
 .main {
     overflow: hidden;
     padding: 50px;
     width: 80%;
-    margin: 100px auto;
+    margin: 100px auto 0 auto;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -66,25 +94,97 @@ body {
     color: #000;
 }
 
-/* Overwriting & improving some base styles */
-.labels::after {
-    content: ' ';
-    clear: both;
-    display: block;
+.scroll-bar {
+    z-index: 999;
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
 }
 
-.details {
-    margin-bottom: 0.5rem;
+.theme-switcher,
+.scroll-up {
+    transition: 0.2s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    overflow: hidden;
+    color: #000000de;
 }
 
-.details .labels {
-    display: block;
+.theme-switcher:hover,
+.scroll-up:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.contacts li a.twitter:hover {
-    color: #1da1f2;
+/* Night theme */
+body.night {
+    color: #e8e6e3de;
+    background: linear-gradient(45deg, #5b5524, #50745c);
 }
 
-.contacts li a.instagram:hover {
-    color: #ff69b4;
+.night .main {
+    background: #181a1b;
+}
+
+.night .divider.fat {
+    border-color: #e8e6e3de;
+}
+
+.night .contacts li a {
+    color: #e8e6e3;
+}
+
+.night .labels > .label {
+    background-color: #25282a;
+    color: rgba(232, 230, 227, 0.6);
+}
+
+.night .details > input::after {
+    border-left-color: #8c8273;
+}
+
+.night a {
+    color: #337dff;
+}
+
+.night .tags .tag {
+    background-color: #1176ba;
+    color: #e8e6e3;
+}
+
+.night .languages .tag {
+    background-color: #3f207f;
+}
+
+.night .character .tag {
+    background-color: #1f5b4e;
+}
+
+.night .likes .tag {
+    background-image: initial;
+    background-color: #467a23;
+}
+
+.night .dislikes .tag {
+    background-image: initial;
+    background-color: #783232;
+}
+
+.night .wants .tag {
+    background-image: initial;
+    background-color: #cc8400;
+    color: #e8e6e3;
+}
+
+.night .theme-switcher,
+.night .scroll-up {
+    background: #181a1b;
+    color: #e8e6e3;
 }
